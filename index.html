@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donuts factory</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#Home">
+        <img src="Logo.png" alt="Donuts-factory-logo" class="D-logo" />
+      </a>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Order">Order</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="Home" class="home">
+        <div class="home-content">
+          <h1>welcome to Donuts factory</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
+            quas non architecto sit tempore, aliquam placeat nihil dignissimos
+            beatae exercitationem distinctio enim laborum eveniet maiores
+            dolorum, reiciendis eius. Illum, veniam.
+          </p>
+        </div>
+      </section>
+
+      <section id="Order" class="order">
+        <div class="order-card">
+          <h2>Order Your Favorite Donuts</h2>
+          <p>
+            Choose from our wide variety of delicious donuts and place your
+            order now!
+          </p>
+          <form>
+            <label for="donutType">Choose Donut Type:</label>
+            <select id="donutType" name="donutType">
+              <option value="glazed">Glazed</option>
+              <option value="chocolate">Chocolate</option>
+              <option value="sprinkles">Sprinkles</option>
+            </select>
+            <br />
+            <label for="quantity">Quantity:</label>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              max="100"
+            />
+            <br />
+            <button type="submit">Order Now</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="Contact" class="contact">
+        <div class="contact-content">
+          <h2>Contact Us</h2>
+          <p>
+            We'd love to hear from you! Reach out with any questions or
+            comments.
+          </p>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+            <br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <br />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <br />
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <a href="#Home">
+          <img src="Logo.png" alt="Donuts-factory-logo" class="D-logo" />
+        </a>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Order">Order</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+      <p>&copy; 2024 Donuts Factory.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

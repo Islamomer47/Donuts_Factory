@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: var(--babypink);
+}
+
+:root {
+  --pink: #f4538a;
+  --babypink: #ff407d;
+  --orange: #faa300;
+  --yellow: #f9f07a;
+  --shineyellow: #ffff80;
+  --blue: #59d5e0;
+  --white: #ffffff;
+  --grey: #f5f5f5;
+  --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.navbar {
+  background-color: var(--white);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  padding-right: 6%;
+}
+
+.navbar li {
+  margin: 0 2%;
+  padding-right: 5%;
+}
+
+.D-logo {
+  height: 40px;
+}
+
+.navbar a {
+  color: var(--babypink);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.home {
+  background: url("donut-gif.gif") no-repeat center center fixed;
+  background-size: cover;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.home-content {
+  background-color: rgba(244, 83, 138, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.order,
+.contact {
+  padding: 50px;
+  text-align: center;
+  background-color: var(--babypink);
+}
+
+.order-card {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+
+.order-card h2 {
+  color: var(--pink);
+}
+
+.order-card form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.order-card label {
+  margin: 10px 0 5px;
+}
+
+.order-card input,
+.order-card select {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid var(--pink);
+  border-radius: 5px;
+}
+
+.order-card button {
+  background-color: var(--pink);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-card button:hover {
+  background-color: var(--orange);
+}
+
+.contact-content {
+  background-color: var(--white);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.contact-content h2 {
+  color: var(--pink);
+}
+
+.contact-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-content label {
+  margin: 10px 0 5px;
+}
+
+.contact-content input,
+.contact-content textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid var(--pink);
+  border-radius: 5px;
+}
+
+.contact-content button {
+  background-color: var(--pink);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-content button:hover {
+  background-color: var(--orange);
+}
+
+.footer {
+  background-color: var(--white);
+  padding: 15px;
+  text-align: center;
+  border-top: 2px solid var(--babypink);
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+.footer li {
+  margin: 0 15px;
+}
+
+.footer a {
+  color: var(--babypink);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer p {
+  color: var(--babypink);
+  margin: 10px 0 0;
+}
