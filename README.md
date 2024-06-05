@@ -32,3 +32,7 @@ A simple web page for "Donuts Factory" where users can enter their order, displa
 1. Open `index.html` in a web browser.
 2. Follow prompts to enter name, gender, order type, and order name.
 3. Alerts and console messages will show interactions and order status.
+
+## Live Demo
+
+Check out the live version of this project [Donuts-factory](https://islamomer47.github.io/Donuts_Factory/).

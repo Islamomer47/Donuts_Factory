@@ -2,9 +2,12 @@ let Name;
 let gender;
 Name = prompt("please enter your first name : ");
 gender = prompt("please enter your gender -male or female- :");
-
-while (gender !== "female" && gender !== "male") {
-  gender = prompt("Please enter your gender:");
+getgender(gender);
+function getgender(gender) {
+  while (gender !== "female" && gender !== "male") {
+    gender = prompt("Please enter your gender:");
+  }
+  return gender;
 }
 alert("welcome " + Name);
 
