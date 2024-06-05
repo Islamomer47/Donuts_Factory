@@ -3,21 +3,11 @@ let gender;
 Name = prompt("please enter your first name : ");
 gender = prompt("please enter your gender -male or female- :");
 
-// if (gender.toLowerCase() === "male") {
-//   alert("welcome " + "Mr." + Name);
-// } else if (gender.toLowerCase() === "female") {
-//   alert("welcome " + "Ms." + Name.toLowerCase());
-// } else {
-//   alert("welcome, happy to see you! ");
-// }
-switch (gender.toLowerCase()) {
-  case "male":
-    alert("welcome " + "Mr." + Name.toLowerCase());
-  case "female":
-    alert("welcome " + "Ms." + Name.toLowerCase());
-  default:
-    alert("welcome, happy to see you! ");
+while (gender !== "female" && gender !== "male") {
+  gender = prompt("Please enter your gender:");
 }
+alert("welcome " + Name);
+
 let order, ordername;
 order = prompt(
   "What would you like to order? (Donut, Coffee, Ice cream, Bakery):"
@@ -32,3 +22,13 @@ alert(
     " flavor is getting prepared!"
 );
 console.log(Name + "ordered" + ordername + order);
+
+let answers = [];
+answers.push(Name);
+answers.push(gender);
+answers.push(order);
+answers.push(ordername);
+
+for (let i = 0; i < answers.length; i++) {
+  console.log(answers[i]);
+}
