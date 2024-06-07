@@ -31,7 +31,20 @@ answers.push(Name);
 answers.push(gender);
 answers.push(order);
 answers.push(ordername);
+var sec = document.createElement("section");
 
-for (let i = 0; i < answers.length; i++) {
-  console.log(answers[i]);
+var newDiv = document.createElement("div");
+var prag = document.createElement("p");
+var o_l = document.createElement("ol");
+newDiv.id = "div-js";
+document.getElementById("list").appendChild(sec);
+sec.appendChild(newDiv);
+newDiv.appendChild(prag);
+prag.appendChild(o_l);
+
+for (var i = 0; i < answers.length; i++) {
+  var li = document.createElement("li");
+
+  o_l.appendChild(li);
+  li.innerHTML = li.innerHTML + answers[i];
 }

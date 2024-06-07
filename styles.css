@@ -46,18 +46,18 @@ body {
   font-weight: bold;
 }
 
-.home {
+.home .home-h1 {
   background: url("donut-gif.gif") no-repeat center center fixed;
   background-size: cover;
   height: 30rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--babypink);
   text-align: center;
 }
 
-.home-content {
+.home-content .home-h1 {
   background-color: rgba(244, 83, 138, 0.5);
   padding: 20px;
   border-radius: 10px;
@@ -198,4 +198,11 @@ body {
 .footer p {
   color: var(--babypink);
   margin: 10px 0 0;
+}
+#sec-js {
+  display: block;
+  width: 200px;
+  margin: 50px auto;
+  border: 3px solid var(--grey);
+  color: #ffffff;
 }
