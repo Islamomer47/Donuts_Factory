@@ -16,6 +16,52 @@ body {
   --grey: #f5f5f5;
   --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
+.order-card .color {
+  color: #ffffff;
+}
+#style {
+  max-width: 100px;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid var(--pink);
+  border-radius: 5px;
+}
+.form-group .checkbox-group {
+  display: flex;
+  justify-content: space-between;
+}
+.form-group .checkbox-group label {
+  margin-right: 10px;
+}
+.form-group button {
+  padding: 10px 15px;
+  background-color: var(--babypink);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-group button:hover {
+  background-color: var(--orange);
+}
 
 .navbar {
   background-color: var(--white);
@@ -48,7 +94,7 @@ body {
 
 .home .home-h1 {
   background: url("donut-gif.gif") no-repeat center center fixed;
-  background-size: cover;
+  background-size: calc(90%);
   height: 30rem;
   display: flex;
   align-items: center;
@@ -62,61 +108,15 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
+.home-h1 {
+  font: size 300px;
+}
 
 .order,
 .contact {
   padding: 50px;
   text-align: center;
   background-color: var(--babypink);
-}
-
-.order-card {
-  background-color: var(--white);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: var(--box-shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.order-card:hover {
-  transform: translateY(-10px);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
-}
-
-.order-card h2 {
-  color: var(--pink);
-}
-
-.order-card form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.order-card label {
-  margin: 10px 0 5px;
-}
-
-.order-card input,
-.order-card select {
-  margin-bottom: 10px;
-  padding: 10px;
-  width: 100%;
-  border: 1px solid var(--pink);
-  border-radius: 5px;
-}
-
-.order-card button {
-  background-color: var(--pink);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.order-card button:hover {
-  background-color: var(--orange);
 }
 
 .contact-content {
@@ -198,11 +198,4 @@ body {
 .footer p {
   color: var(--babypink);
   margin: 10px 0 0;
-}
-#sec-js {
-  display: block;
-  width: 200px;
-  margin: 50px auto;
-  border: 3px solid var(--grey);
-  color: #ffffff;
 }
